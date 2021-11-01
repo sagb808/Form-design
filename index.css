@@ -4,7 +4,7 @@ div{
 }
 .full{
     width: 100%;
-    margin-left: 5%;
+    margin-left: 12px;
 }
 
 
@@ -16,6 +16,7 @@ div{
     margin:auto;
     border-radius:5px;
     background-color:rgb(248 249 251);
+    margin-left:5px;
 }
 .input-box:hover {
     background-color:lightblue;
@@ -28,40 +29,48 @@ div{
     border-radius:10px;
 }
 .dropdown-content {
+    width:100px;
+    height:60px;
     flex-direction:column;
     position:absolute;
-    top:30px;
+    top:120px;
     border:1px solid black;
-    display:block;
+    display:none;
 }
 #button-dropdown:hover .dropdown-content {
-    display:none;
+    display:block;
 }
 #button-submit {
     width:150px !important;
-    background-color:lightsalmon;
-    border:1px solid lightseagreen ;
+    border:1px solid rgb(132 0 255 / 78%) ;
+    color:rgb(132 0 255 / 78%);
+    background-color:rgb(132 0 255 / 18%);
+    font-size:14px;
+    font-weight:800;
 }
 #button-submit:hover {
-    background-color:rgb(179, 46, 52);
+    background-color:rgb(132 0 255 / 58%);
     color:white;
-    font-size:15px;
+    font-size:15px;    
+    border:2px solid orangered;
 }
-
-
 #btn-submit {
     margin-left:35px;
     width: 195px;
+}
+#input-age {
+
 }
 .full > .label {
     font-size:16px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:#8d93ce;
+    margin-top:5px;
 }
 .heading {
     color:blue;
     text-align:center;
-    width:100%;
+    width:60%;
     margin-left:40%;
 }
 
@@ -83,6 +92,7 @@ div{
         width:150px;
     }
     #button-dropdown {
+        position:relative;
         margin-left:28px;
     }
     #select-gender {

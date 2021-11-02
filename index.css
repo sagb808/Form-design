@@ -1,28 +1,36 @@
 
 div{
     display: flex;
+    flex-direction:row;
+    margin-left:5px;
+}
+body {
+    background-color:#0000001a;
 }
 .full{
-    width: 100%;
-    margin-left: 12px;
-}
-
-
-/* .input-age , .button-dropdown , .select-gender , .select-category , .button-submit{ */
-    .input-box {
+    max-width: 100%;
+    margin-left: 25px;
+    }
+#container { 
+    margin-left:20px;
+} 
+.input-box {
     max-width:100%;
     height:30px;
-    border:1px solid rgb(182, 180, 180);
+    border:1px solid #0000003b;
     margin:auto;
     border-radius:5px;
     background-color:rgb(248 249 251);
     margin-left:5px;
+    color:rgba(89, 32, 143, 0.815);
 }
 .input-box:hover {
-    background-color:lightblue;
+    background-color:rgb(132 0 255 / 8%);
     color:blue;
+    box-shadow: 2px 2px 2px 2px 0.5 rgb(182, 180, 180);
+    border:1px solid blue;
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .1);
 }
-
 .div-dropdown {
     position:relative;
     max-width:100%;
@@ -52,29 +60,27 @@ div{
     background-color:rgb(132 0 255 / 58%);
     color:white;
     font-size:15px;    
-    border:2px solid orangered;
+    border:1px solid rgb(65, 65, 136);
 }
 #btn-submit {
     margin-left:35px;
     width: 195px;
 }
-#input-age {
-
-}
 .full > .label {
     font-size:16px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:#8d93ce;
+    color:#484e8c;
     margin-top:5px;
 }
 .heading {
     color:blue;
-    text-align:center;
-    width:60%;
-    margin-left:40%;
+    width:64%;
+    margin-left:36%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
+/* media-query start here */
 @media screen and (max-width: 800px) {
     .full{
         width: 100px;
@@ -87,27 +93,42 @@ div{
     .heading{
         margin-left:0;
     }
-    #input-age {
+     #input-age {
         margin-left:98px;
         width:150px;
     }
     #button-dropdown {
-        position:relative;
-        margin-left:28px;
+        margin-left:0;
     }
     #select-gender {
         margin-left:69px;
     }
     #select-category { 
         margin-left:54px;
-    }
+    } 
     #button-submit {
         margin-left:20px;
         margin-top:20px;
+    } 
+    #select-quali {
+        margin-left:30px;
     }
     .full {
         margin-top:15px;
     }
+    #container {
+        background-color:#efefef82;
+    }
 
        
+}
+ /* media-query ends here */
+
+.courses-description {
+    width:100%;
+    margin:auto;
+} 
+ul {
+    
+    margin: auto;
 }
